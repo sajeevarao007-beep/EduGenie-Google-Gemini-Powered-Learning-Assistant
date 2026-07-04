@@ -1,77 +1,63 @@
-# 🚀 EduGenie Learning Assistant – Project Epics & User Stories
+# 🧠 EduGenie Learning Assistant – Model Selection & Architecture Design
 
 ---
 
-## 🧠 Epic 1: Model Selection and Architecture
+## 🎯 Objective
 
-### 📌 Story 1
-Configure **Gemini 1.5 Pro** and **LaMini-Flan-T5** models for:
-- Question Answering (QnA)
+This phase focuses on selecting suitable AI models and designing the foundational architecture of the **EduGenie Learning Assistant**.
+
+The goal is to ensure:
+- Efficient educational assistance  
+- Modular development  
+- Smooth integration between frontend, backend, and AI-powered functionalities  
+
+---
+
+## 🤖 AI Model Selection
+
+### 🔷 Google Gemini 1.5 Pro (Cloud-based AI)
+
+For advanced educational functionalities such as:
+- Question Answering (Q&A)
 - Text Summarization
 - Quiz Generation
-- Learning Recommendations
-- Concept Explanation
-
----
-
-## ⚙️ Epic 2: Core Functionalities Development
-
-### 📌 Story 1
-Implement the following AI-powered educational modules:
-- Explanation Module
-- Question & Answer (QnA) Module
-- Quiz Generation Module
-- Summary Generation Module
-- Learning Path Recommendation Module
-
----
-
-### 📌 Story 2
-Create RESTful API endpoints and connect each endpoint with its respective module logic:
-
-- `/explain` → Concept explanation
-- `/qna` → Question answering
-- `/quiz` → Quiz generation
-- `/summary` → Text summarization
-- `/recommend` → Learning path suggestions
-
----
-
-## 🎨 Epic 3: Frontend Development
-
-### 📌 Story 1
-Develop a responsive frontend interface with:
-- Task dropdown menu
-- Text input area
-- Submit buttons
-- CSS styling for clean UI
-
----
-
-### 📌 Story 2
-Integrate frontend forms with FastAPI backend using **POST requests** and display real-time AI outputs.
-
----
-
-## 🚀 Epic 4: Deployment
-
-### 📌 Story 1
-Deploy and run the **EduGenie application locally** using:
-- FastAPI
-- Uvicorn ASGI server
-
----
-
-### 📌 Story 2
-Test all functionalities:
-- Question Answering
-- Explanation Generation
-- Quiz Generation
-- Summarization
 - Personalized Learning Recommendations
 
+**Why Gemini 1.5 Pro?**
+- Advanced reasoning capabilities  
+- Strong contextual understanding  
+- Structured response generation  
+- Cloud-based inference support  
+- High accuracy across multiple learning tasks  
+
+👉 This model enables EduGenie to generate intelligent, human-like educational content efficiently and reliably.
+
 ---
 
-## ✅ Summary
+### 🔷 LaMini-Flan-T5-783M (Local Lightweight AI Model)
 
-This structure defines the full development lifecycle of the **EduGenie Learning Assistant**, from model selection to deployment, ensuring modular AI-powered educational features with a responsive frontend and RESTful backend architecture.
+Used for:
+- Concept Explanation Module  
+
+**Why LaMini-Flan-T5?**
+- Instruction-tuned model  
+- Lightweight and CPU-compatible  
+- Efficient for local execution  
+- Reduces dependency on cloud APIs  
+- Generates simplified explanations for complex topics  
+
+👉 This model helps learners understand concepts in a **concise, beginner-friendly, and readable format**.
+
+---
+
+## 🏗️ System Architecture Design
+
+A modular folder structure was designed to ensure:
+- Scalability  
+- Maintainability  
+- Easy debugging  
+- Clean separation of concerns  
+
+---
+
+## 📁 Project Folder Structure
